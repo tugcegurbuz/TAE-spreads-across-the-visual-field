@@ -1,1 +1,1 @@
-# TAE-spreads-across-whole-visual-hemifield
+# TAE-spreads-across-entire-visual-hemifield
