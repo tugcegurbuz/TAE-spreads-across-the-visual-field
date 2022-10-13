@@ -62,7 +62,7 @@ welcome_screen(win, routineTimer)
 # Test routine
 data = no_adaptation(sc_states, location_ind_list)
 # Save the data
-data_path = './'+ str(expInfo['participant']) +'_no_adap.csv'
+data_path = './'+ str(expInfo['participant']) +'_No_adaptation.csv'
 data.to_csv(data_path)
 # End screen
 end_screen(win, routineTimer)
