@@ -7,8 +7,8 @@ Author: Busra Tugce Gurbuz
 
 Dependencies:
 1.PsychoPy 3.0.1.
-2. numpy, os, sys, pandas
-3. set_parameters.py, welcome_screen.py, no_adaptation.py, end_screen.py
+2. set_parameters.py, welcome_screen.py, no_adaptation.py, end_screen.py
+3. Check requirements.txt 
 '''
 
 
@@ -18,10 +18,9 @@ from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
 								STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 import numpy as np
 import os
-import sys
 import pandas as pd
 
-import set_parameters
+from set_parameters import *
 import welcome_screen
 import no_adaptation
 import end_screen
@@ -60,7 +59,7 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 # Welcome Screen to experiment
 welcome_screen(win, routineTimer)
 # Test routine
-data = no_adaptation(sc_states, location_ind_list)
+data = no_adaptation(win, sc_states, location_ind_list, routineTimer)
 # Save the data
 data_path = './'+ str(expInfo['participant']) +'_No_adaptation.csv'
 data.to_csv(data_path)

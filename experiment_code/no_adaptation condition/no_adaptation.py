@@ -1,13 +1,15 @@
-import set_parameters
+from set_parameters import *
 from psychopy import visual, event, clock, core
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
 								STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 import pandas as pd
 import numpy as np
+import random
 
-def no_adaptation(sc_states, location_ind_list):
+def no_adaptation(win, sc_states, location_ind_list, routineTimer):
     '''
     Input:
+    -win: experiment window
     -sc_states: the tensor that stores the information of the staircase states
     -location_ind_list: index list of how many staircases will be shown.
         This list will be replicated 25 times and shuffled to provide gratings randomly
