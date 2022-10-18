@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import random
 
-def no_adaptation(win, sc_states, location_ind_list, routineTimer):
+def no_adaptation(win, expInfo, sc_states, location_ind_list, routineTimer):
     '''
     Input:
     -win: experiment window
@@ -16,6 +16,7 @@ def no_adaptation(win, sc_states, location_ind_list, routineTimer):
         in each staircase conidition.
         The staircase has fixed trial number = 25 for every spatial location.
         There are two staircases for each spatial locations
+    -routineTimer: timer for the routine
 
     Output:
     -df: data frame of experimental data

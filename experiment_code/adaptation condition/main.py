@@ -22,7 +22,7 @@ import pandas as pd
 
 from set_parameters import *
 import welcome_screen
-import no_adaptation
+import adaptation
 import end_screen
 
 ################## EXP INFO #######################################
@@ -59,9 +59,9 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 # Welcome Screen to experiment
 welcome_screen(win, routineTimer)
 # Test routine
-data = no_adaptation(win, expInfo, sc_states, location_ind_list, routineTimer)
+data = adaptation(win, expInfo, sc_states, location_ind_list, routineTimer, globalClock)
 # Save the data
-data_path = './'+ str(expInfo['participant']) +'_No_adaptation.csv'
+data_path = './'+ str(expInfo['participant']) +'_Adaptation.csv'
 data.to_csv(data_path)
 # End screen
 end_screen(win, routineTimer)
