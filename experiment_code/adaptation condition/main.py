@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
-This code runs no-adaptation condition.
+This code runs adaptation condition.
 
 Author: Busra Tugce Gurbuz
 
 Dependencies:
 1.PsychoPy 3.0.1.
-2. set_parameters.py, welcome_screen.py, no_adaptation.py, end_screen.py
+2. set_parameters.py, welcome_screen.py, adaptation.py, end_screen.py
 3. Check requirements.txt 
 '''
 
